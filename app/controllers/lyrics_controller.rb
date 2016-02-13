@@ -5,7 +5,7 @@ class LyricsController < ApplicationController
   end
 
   def new
-    @lyrics = Lyric.new
+    @lyric = Lyric.new
   end
 
   def create

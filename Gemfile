@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'simple_form'
+gem 'table_print'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
