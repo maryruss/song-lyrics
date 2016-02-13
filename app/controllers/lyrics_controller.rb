@@ -1,11 +1,11 @@
 class LyricsController < ApplicationController
 
   def index
-    @lyric = Lyric.all
+    @lyrics = Lyric.all
   end
 
   def new
-    @lyric = Lyric
+    @lyrics = Lyric.new
   end
 
 end

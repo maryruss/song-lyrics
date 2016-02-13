@@ -1,0 +1,14 @@
+<h1 class="text-center">Enter your Song Lyrics</h1>
+<form class="col-xs-4 col-xs-offset-4">
+  <div class="form-group">
+    <%= simple_form_for @lyrics do |f| %>
+      <%= f.input :author, class:'form-control'%>
+      <%= f. input :song_title %>
+      <%= f.input :song_lyric, :as=>:text %>
+      <%= f.submit 'Save', class:'btn btn-primary'%>
+    <% end %>
+  </div>
+</form>
+
+
+
