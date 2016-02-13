@@ -8,4 +8,14 @@ class LyricsController < ApplicationController
     @lyrics = Lyric.new
   end
 
+  def create
+    Lyric.create(lyric_params)
+    redirect_to root_path
+  end
+
+  private
+
+  def lyric_params
+    params.require(:lyric).permit(:author, :song_title, :song_lyric)
+  end
 end
