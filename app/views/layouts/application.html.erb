@@ -17,7 +17,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">SongLyrics</a>
+        <%= link_to 'SongLyrics', root_path, class:'navbar-brand' %>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -29,7 +29,7 @@
           <button type="submit" class="btn btn-default">Submit</button>
         </form>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Add Lyrics</a></li>
+          <%= link_to 'Add Lyrics', new_lyric_path, class:'navbar-brand' %>
         </ul>
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
