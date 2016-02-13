@@ -1,11 +1,12 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
+gem 'tzinfo-data'
 gem 'simple_form'
 gem 'table_print'
 
-source 'https://rails-assets.org' do
+source 'http://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
-end
+ end
 
 gem 'bootstrap-sass', '~> 3.3.5.1'
 gem 'sprockets', '2.11.0'
@@ -53,4 +54,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-

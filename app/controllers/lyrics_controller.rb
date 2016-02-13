@@ -1,7 +1,7 @@
 class LyricsController < ApplicationController
 
   def index
-    @lyrics = Lyric.all
+    @lyrics = Lyric.order("created_at DESC")
   end
 
   def new
