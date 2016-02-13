@@ -14,8 +14,11 @@
 
 <form class="col-xs-4 col-xs-offset-4">
   <%= form_for @lyric do |f| %><br/>
+    <h4 >Author</h4>
     <%= f.text_field :author %><br/><br/>
+    <h4> Song Title</h4>
     <%= f.text_field :song_title %><br/><br/>
+    <h4> Song Lyric</h4>
     <%= f.text_area :song_lyric, size: "60x12" %>
     <%= f.submit "Create" %>
   <% end %>
