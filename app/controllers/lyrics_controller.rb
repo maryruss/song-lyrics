@@ -9,8 +9,12 @@ class LyricsController < ApplicationController
   end
 
   def create
-    Lyric.create(lyric_params)
-    redirect_to root_path
+    @lyric= Lyric.new(lyric_params)
+    if @lyric.save
+      redirect_to root_path
+    else
+        render text: params[:lyric].inspect
+     end
   end
 
   private
