@@ -5,10 +5,15 @@
 </div>
 
 
-<div class="col-xs-10 col-xs-offset-4">
-  <% @lyrics.each do |lyric| %>
-    <h1><%= lyric.song_title %>
-    <p><%= lyric.song_lyric %><br/>
-    <i><%= lyric.author %>
-  <% end %>
-</div>
+
+
+<% @lyrics.each do |lyric| %>
+  <div class="col-xs-10 col-xs-offset-1 booyah-box">
+    <h1 class="text-center"><%= lyric.song_title %></h1>
+    <p class="text-center"><%= lyric.song_lyric %></p><br/>
+    <div class="text-center">
+      <i><%= lyric.author %></i>
+    </div>
+  </div>
+<% end %>
+
